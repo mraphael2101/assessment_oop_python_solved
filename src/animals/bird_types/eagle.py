@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 from ..bird import Bird
 from ..behaviours.can_fly import CanFly
 from ..behaviours.hop import Hop

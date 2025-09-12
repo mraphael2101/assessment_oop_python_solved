@@ -1,6 +1,3 @@
-from __future__ import annotations
-
-
 class Hop:
     # @staticmethod defines a class function that gets no self or class object (cls)
     @staticmethod
