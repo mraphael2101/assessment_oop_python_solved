@@ -1,0 +1,1 @@
+# Bird type implementations (e.g., Eagle, Penguin)
