@@ -1,7 +1,9 @@
+from typing import Optional
+
 class Animal:
-    def __init__(self, name: str | None = None) -> None:
+    def __init__(self, name: Optional[str] = None) -> None:
         self.age: int = 0
-        self.name: str | None = None
+        self.name: Optional[str] = None
 
         if name is None:
             print("An animal now exists without a name")
@@ -32,11 +34,11 @@ class Animal:
 
     # Use backing attributes (_age/_name) in properties to avoid recursive self-access
     @property
-    def name(self) -> str | None:
+    def name(self) -> Optional[str]:
         return self._name
 
     @name.setter
-    def name(self, value: str | None) -> None:
+    def name(self, value: Optional[str]) -> None:
         if value is not None and not isinstance(value, str):
             raise TypeError("name must be a string or None")
         self._name = value
